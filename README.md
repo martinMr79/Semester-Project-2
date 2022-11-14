@@ -69,9 +69,10 @@ This list covers libraries and services that have been vetted by the company and
 - MUI (>5)
 
 ### Hosting services
+
 - GitHub Pages
 - Netlify
-- Design applications
+### Design applications
 - Adobe XD
 - Figma
 - Sketch
