@@ -1,0 +1,23 @@
+{
+  "name": "semester-project-2",
+  "version": "0.0.1",
+  "description": "Noroff semester project second year",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinMr79/Semester-Project-2.git"
+  },
+  "author": "Martin Mroz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinMr79/Semester-Project-2/issues"
+  },
+  "homepage": "https://github.com/martinMr79/Semester-Project-2#readme"
+}
