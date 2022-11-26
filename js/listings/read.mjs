@@ -1,6 +1,6 @@
 import { API_AUCTION_URL } from "../api/apiFetch.mjs";
 
-const action = "/listings";
+const action = "/listings?limit=8";
 const listingsCard = document.querySelector(".recentListings")
 
 export async function getListings() {
@@ -12,18 +12,23 @@ export async function getListings() {
 
   for (let i = 0; i < listings.length; i++) {
     listingsCard.innerHTML +=
+  
   `<a href="details.html?id=${listings[i].id}">
-  <div class="card lg:card-side bg-base-100 shadow-xl">
-  <figure><img src="${listings[i].media}" alt="Album"/></figure>
-  <div class="card-body">
+  <div class= "card lg:card-side bg-base-200 shadow-xl gap-6 max-w-xs">
+  <figure><img class="max-w-xs" src="${listings[i].media[0]}" alt="Album"/></figure>
+  <div class="card-body ">
   <h2 class="card-title">${listings[i].title}</h2>
   <p>${listings[i].tags}</p>
   <div class="card-actions justify-end">
-  <button class="btn btn-primary">Bid</button>
-  <li>description: ${listings[i].description}</li>
+
+  <p>description: ${listings[i].description}</p>
+
+  <p>bid: ${listings[i].bids}</p>
+  
+  <p>bids: ${listings[i]._count.bids}</p>
 </div>
 </div>
-</div>
+  </div>
   </div>
   </a>`;
   }
@@ -61,7 +66,6 @@ for (let i = 0; i < listings.length; i++) {
 */
 
 getListings()
-console.log(getListings())
 
 /*
 
