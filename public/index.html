@@ -48,8 +48,41 @@
 
 <div class="modal" id="my-modal-2">
   <div class="modal-box">
-    <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
-    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+    <h3 class="font-bold text-lg">Login to your account</h3>
+
+    <form id="loginForm">
+
+      <div class="form-group mb-3">
+          <label for="" class="fw-semibold">Email</label>
+          <input class="form-control mb-4 border border-secondary" type="email" name="email" required  pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Only @(stud.)noroff.no domains are allowed to login.">
+      </div>
+
+      <div class="form-group mb-3">
+          <label for="" class="fw-semibold">Password</label>
+          <input class="form-control border border-secondary" type="password" name="password" required minlength="8">
+      </div>
+      
+      <div
+      class="d-flex align-items-center justify-content-center form-check"
+    >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="flexCheckChecked"
+        checked
+      />
+      <p class="mx-3 mt-3">remember me</p>
+      
+    </div>
+
+
+
+      <button class="btn btn-primary my-3 col-6 btn-lg fw-bolder">Login</button>
+      <p class="my-3">
+          Don`t have an account yet?</p><a href="../register/" type="button" class="btn btn-success fw-bolder pb-2 col-6 btn-lg mb-5">Sign up</a>
+  </form>
+    
     <div class="modal-action">
      <a href="#" class="btn">Yay!</a>
     </div>
