@@ -14,9 +14,9 @@ export async function getListings() {
     listingsCard.innerHTML +=
   
   `<a href="details.html?id=${listings[i].id}">
-  <div class= "card lg:card-side bg-base-200 shadow-xl gap-6 max-w-xs">
+  <div class= "card lg:card-side bg-base-200 shadow-xl gap-10 max-w-xs">
   <figure><img class="rounded-full" src="${listings[i].media[0]}" alt="Album"/></figure>
-  <div class="card-body ">
+  <div class="card-body">
   <h2 class="card-title">${listings[i].title}</h2>
   <p>${listings[i].tags}</p>
   <div class="card-actions justify-start">
