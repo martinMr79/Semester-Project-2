@@ -2856,8 +2856,20 @@ h1, h2, h3 {
   flex: none;
 }
 
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
@@ -2907,6 +2919,10 @@ h1, h2, h3 {
   padding-bottom: 0.5rem;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -2919,6 +2935,10 @@ h1, h2, h3 {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-blue-700 {
