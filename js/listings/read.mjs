@@ -1,6 +1,6 @@
 import { API_AUCTION_URL } from "../api/apiFetch.mjs";
 
-const action = "/listings?limit=8";
+const action = "/listings?_bids=true&limit=8";
 const listingsCard = document.querySelector(".recentListings")
 
 export async function getListings() {
@@ -14,16 +14,16 @@ export async function getListings() {
     listingsCard.innerHTML +=
   
   `<a href="details.html?id=${listings[i].id}">
-  <div class= "card lg:card-side bg-base-200 shadow-xl gap-10 max-w-xs">
+  <div class= "card lg:card-side bg-base-200 shadow-xl gap-10 max-w-sm">
   <figure><img class="rounded-full" src="${listings[i].media[0]}" alt="Album"/></figure>
   <div class="card-body">
   <h2 class="card-title">${listings[i].title}</h2>
   <p>${listings[i].tags}</p>
   <div class="card-actions justify-start">
 
-  <p>description: ${listings[i].description}</p>
+  <p>Description: ${listings[i].description}</p>
 
-  <p>bid: ${listings[i].bids}</p>
+  <p>Current bid: ${listings[i].bids.reverse()[0].amount} $</p>
   
   <p>bids: ${listings[i]._count.bids}</p>
 </div>
