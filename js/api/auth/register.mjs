@@ -1,19 +1,22 @@
-/*import{API_AUCTION_URL} from "../apiFetch.mjs";
+import{API_AUCTION_URL} from "../apiFetch.mjs";
+
 
 const action = "/auth/register";
-const method = "POST";
+const method = "post";
 
 
 
-export async function register(name, email, password, ) {
-  try {
+export async function register(profile) {
+  /* try { */
     const registerURL = API_AUCTION_URL + action;
-    const body = JSON.stringify({
+  
+
+    /*const body = JSON.stringify({
       email: email, 
       password: password,  
-      name: name,
+      name: name, */ 
           
-    });
+    } /* );
 
   const response = await fetch(registerURL, {
         headers: {
@@ -31,4 +34,4 @@ export async function register(name, email, password, ) {
   console.log(error); 
 }
 
-}*/
+} */

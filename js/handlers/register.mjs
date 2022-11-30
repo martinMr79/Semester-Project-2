@@ -1,4 +1,4 @@
-/*import { register } from "../api/auth/register.mjs";*/
+import { register } from "../api/auth/register.mjs";
 
 /**
  * Stores user input as an object when form is submitted
@@ -12,10 +12,12 @@ export function setRegisterFormListener() {
       const form = event.target;
       const formData = new FormData(form);
       const profile = Object.fromEntries(formData.entries())
-      console.log("did it work?") 
-    })
 
-}
+      //send to api 
+      register(profile)
+      
+    })
+  }
 
 
 /*
