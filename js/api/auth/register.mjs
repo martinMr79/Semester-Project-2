@@ -4,34 +4,21 @@ import{API_AUCTION_URL} from "../apiFetch.mjs";
 const action = "/auth/register";
 const method = "post";
 
-
-
 export async function register(profile) {
-  /* try { */
     const registerURL = API_AUCTION_URL + action;
-  
-
-    /*const body = JSON.stringify({
-      email: email, 
-      password: password,  
-      name: name, */ 
-          
-    } /* );
-
+    const body = JSON.stringify(profile)
+    console.log(registerURL)
   const response = await fetch(registerURL, {
         headers: {
             "content-Type": "application/json"
         },
-        method: method,
-        body: body,
-    });
+        method, /*: method, */
+        body /*: body, */
+    })
     
   const result = await response.json();
-  alert("You are now registered")
-  
-
-} catch (error) {
-  console.log(error); 
+  console.log(result);
 }
 
-} */
+register()
+console.log(register)
