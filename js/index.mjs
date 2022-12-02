@@ -4,13 +4,13 @@
 
 router(); */
 
-import { setRegisterFormListener } from "./handlers/register.mjs";
+/*import { setRegisterFormListener } from "./handlers/register.mjs";
 
-setRegisterFormListener()
+setRegisterFormListener()*/
 
-/* import { setLoginFormListener } from "./handlers/login.mjs"; */
+import { setLoginFormListener } from "./handlers/login.mjs";
 
-
+setLoginFormListener()
 
 /*
 const path = location.pathname;
