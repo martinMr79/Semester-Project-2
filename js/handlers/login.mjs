@@ -8,7 +8,7 @@ import { login } from "../api/auth/login.mjs";
  export async function setLoginFormListener() {
   const form = document.querySelector("#loginForm");
 
-
+    if (form) {
     form.addEventListener("submit", (event) => {
     event.preventDefault()
     const form = event.target;
@@ -19,7 +19,7 @@ import { login } from "../api/auth/login.mjs";
       login(profile)
 
   })
-
+}
 }
 
 /*

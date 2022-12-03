@@ -4,20 +4,20 @@
 
 router(); */
 
-/*import { setRegisterFormListener } from "./handlers/register.mjs";
+import { setRegisterFormListener } from "./handlers/register.mjs";
 
-setRegisterFormListener()*/
+setRegisterFormListener()
 
 import { setLoginFormListener } from "./handlers/login.mjs";
 
 setLoginFormListener()
 
-/*
+
 const path = location.pathname;
 
-if (path === "/profile/login/index.html") {
+if (path === "/public/login/") {
   listeners.setLoginFormListener();
-} else if (path === "/profile/register/index.html") {
+} else if (path === "/public/register/") {
   listeners.setRegisterFormListener();
 }
 
@@ -26,4 +26,3 @@ if (path === "/profile/login/index.html") {
 //
 //post.getPost()
 // post.getPosts().then(console.log);
-*/
