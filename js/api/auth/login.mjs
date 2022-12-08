@@ -1,4 +1,4 @@
-import { API_AUCTION_URL } from "../apiFetch.mjs";
+import { API_AUCTION_URL } from "../apiURL.mjs";
 import * as storage from "../../storage/storage.mjs"; 
 
 const action = "/auth/login";

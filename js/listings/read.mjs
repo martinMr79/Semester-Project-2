@@ -1,4 +1,4 @@
-import { API_AUCTION_URL } from "../api/apiFetch.mjs";
+import { API_AUCTION_URL } from "../api/apiURL.mjs";
 
 const action = "/listings?_bids=true&limit=8";
 const listingsCard = document.querySelector(".recentListings")
