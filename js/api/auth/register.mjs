@@ -21,6 +21,3 @@ export async function register(profile) {
   console.log(result);
   console.log(result.credits);
 }
-
-//register()
-console.log(register)
