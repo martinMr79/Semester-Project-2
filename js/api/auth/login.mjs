@@ -24,6 +24,6 @@ export async function login(profile) {
     alert("You are now logged in")
    
     
-    const result = await response.json()
-    console.log(result)
+    /*const result = await response.json()
+    console.log(result)*/
 }

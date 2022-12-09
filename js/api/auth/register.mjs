@@ -19,7 +19,8 @@ export async function register(profile) {
   const result = await response.json();
   alert("You are now registered")
   console.log(result);
+  console.log(result.credits);
 }
 
-register()
+//register()
 console.log(register)
