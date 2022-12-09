@@ -1,4 +1,4 @@
-import{API_AUCTION_URL} from "../apiFetch.mjs";
+import{API_AUCTION_URL} from "../apiURL.mjs";
 
 
 const action = "/auth/register";
@@ -19,7 +19,5 @@ export async function register(profile) {
   const result = await response.json();
   alert("You are now registered")
   console.log(result);
+  console.log(result.credits);
 }
-
-register()
-console.log(register)

@@ -1,8 +1,3 @@
-//import router from  "./router.mjs";
-
-/*import * as listeners from "./handlers/index.mjs";
-
-router(); */
 
 import { setRegisterFormListener } from "./handlers/register.mjs";
 
@@ -12,17 +7,23 @@ import { setLoginFormListener } from "./handlers/login.mjs";
 
 setLoginFormListener()
 
+import { setSellItemFormListener } from "./handlers/sell.mjs";
 
-const path = location.pathname;
+setSellItemFormListener() 
 
-if (path === "/public/login/") {
-  listeners.setLoginFormListener();
-} else if (path === "/public/register/") {
-  listeners.setRegisterFormListener();
+export function form(){
+
+  const path = location.pathname;
+
+  if (path === "/public/login/") {
+    listeners.setLoginFormListener();
+  } else if (path === "/public/register/") {
+    listeners.setRegisterFormListener();
+  }  else if (path === "/public/sell/") {
+    listeners.setSellItemFormListener();
+  } 
+
 }
 
+form()
 
-//post.removePost()
-//
-//post.getPost()
-// post.getPosts().then(console.log);

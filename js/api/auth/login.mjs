@@ -1,4 +1,4 @@
-import { API_AUCTION_URL } from "../apiFetch.mjs";
+import { API_AUCTION_URL } from "../apiURL.mjs";
 import * as storage from "../../storage/storage.mjs"; 
 
 const action = "/auth/login";
@@ -24,6 +24,6 @@ export async function login(profile) {
     alert("You are now logged in")
    
     
-    const result = await response.json()
-    console.log(result)
+    /*const result = await response.json()
+    console.log(result)*/
 }

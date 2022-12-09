@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/js/listings/sell.mjs" defer type="module" ></script>
+    <script src="/js/index.mjs" defer type="module"></script>
+    <script
+    src="https://kit.fontawesome.com/bbebfafa64.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+
+
+<body>
+    <div class="container text-center">
+    <main class="flex-grow-1">
+        <div class="">
+            <div class="flex justify-center">
+                
+                    
+                    <form id="sellItem">
+                        <h2>Sell your items</h2>
+                        <div class="my-3">
+                          <label for="">Title</label>
+                          <input class="form-control border border-secondary" type="text" name="title" required>
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="">Description</label>
+                          <textarea class="form-control border border-secondary" type="text" name="description" required></textarea>
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="">Tags</label>
+                          <input class="form-control border border-secondary" type="text" name="tags">
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="">Image URL</label>
+                          <input class="form-control border border-secondary" type="url" name="media">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="">Auction end</label>
+                            <input class="form-control border border-secondary" type="datetime-local" name="endsAt">
+                          </div>  
+                          
+                        <button class="btn btn-success">Sell now</button>
+                      </form>
+            </div>
+        </div>
+      </div>  
+    </main>
+</body>
+</html>
