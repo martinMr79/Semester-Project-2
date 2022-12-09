@@ -7,6 +7,10 @@ import { setLoginFormListener } from "./handlers/login.mjs";
 
 setLoginFormListener()
 
+import { setSellItemFormListener } from "./handlers/sell.mjs";
+
+setSellItemFormListener() 
+
 export function form(){
 
   const path = location.pathname;
@@ -15,7 +19,9 @@ export function form(){
     listeners.setLoginFormListener();
   } else if (path === "/public/register/") {
     listeners.setRegisterFormListener();
-  }
+  }  else if (path === "/public/sell/") {
+    listeners.setSellItemFormListener();
+  } 
 
 }
 
