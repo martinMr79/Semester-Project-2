@@ -42,35 +42,5 @@ export async function getListings() {
 
   } 
 
- 
-
-/*<div class="card lg:card-side bg-base-100 shadow-xl">
-  <figure><img src="https://placeimg.com/400/400/arch" alt="Album"/></figure>
-  <div class="card-body">
-    <h2 class="card-title">New album is released!</h2>
-    <p>Click the button to listen on Spotiwhy app.</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Listen</button>
-    </div>
-  </div>
-</div> */
-
-/*
-for (let i = 0; i < listings.length; i++) {
-  listingsCard.innerHTML +=
-`<a href="details.html?id=${listings[i].id}">
-<h2>${listings[i].title}</h2>
-<ul>
-<li>description: ${listings[i].description}</li>
-<li>Img: ${listings[i].media}</li>
-<li>Tags: ${listings[i].tags}</li>
-
-</ul>
-</div>
-</a>`;
-}
-
-*/
-
 getListings()
 
