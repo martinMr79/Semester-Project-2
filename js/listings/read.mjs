@@ -74,23 +74,3 @@ for (let i = 0; i < listings.length; i++) {
 
 getListings()
 
-/*
-
-
-export async function getListing(id) {
-  if (!id) {
-    throw new Error("Get requires a postID");
-  }
-
-  const getPostURL = `${API_AUCTION_URL}${action}/${id}`;
-  
-  const response = await authFetch(getPostURL)
-
-  return await response.json();
-}
-
-getListing()
-console.log(getListing())
-
-
-*/
