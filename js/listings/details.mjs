@@ -21,7 +21,8 @@ listingDetails.innerHTML +=
 <h2 class="card-title">${listings.title}</h2>
 <p>${listings.tags}</p>
 <div class="card-actions justify-start">
-
+<p>bids: ${listings._count.bids}</p>
+<p>Current bid:</p>
 <p>Description: ${listings.description}</p>`
 
 
