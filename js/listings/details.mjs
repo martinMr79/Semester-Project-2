@@ -3,15 +3,16 @@ import { authFetch } from "../api/auth/authFetch.mjs"
 
 
 export async function getListing() {
-
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 let id = urlParams.get("id");
 const action = "/listings";
 
 const getListingURL = `${API_AUCTION_URL}${action}/${id}`;    
-const response = await authFetch(getListingURL)
+const response = await fetch(getListingURL)
 const listings = await response.json();
+
+console.log(listings);
 
 const listingDetails = document.querySelector(".listingDetails")
 listingDetails.innerHTML += 
@@ -33,7 +34,6 @@ listingTitle.innerHTML +=
 } 
 
   getListing()
-  console.log(getListing())
   
 
 
