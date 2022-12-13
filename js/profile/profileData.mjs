@@ -28,24 +28,20 @@ export async function readProfile (name) {
     
   }
 
-
+/**
+ * Displays user data
+ */
 
 export async function profileInfo() {
     const userName = document.querySelector("#userName");
     const userAvatar = document.querySelector(".userAvatar");
     const userCredits = document.querySelector(".credits");
     
-    const { name, credits } = load("profile");
-    const avatar = load("avatar");
-    
-    
+    const { name, avatar, credits } = load("profile");
 
-    //User information 
     userName.innerText = name; 
     userAvatar.src = avatar; 
-    userCredits.innerText = credits; 
-
-    console.log(userAvatar)    
+    userCredits.innerText = credits;   
 
  }
 
