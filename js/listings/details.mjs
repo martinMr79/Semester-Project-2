@@ -24,12 +24,12 @@ listingDetails.innerHTML +=
 <div class="card-actions justify-start">
 <p>bids: ${listings._count.bids}</p>
 <p>Current bid:</p>
-<p>Description: ${listings.description}</p>`
+<p>Description: ${listings.description}</p>
+<div class="card-actions">
+<button class="btn btn-primary">Place bid</button>
+</div>
+`
 
-
-const listingTitle = document.querySelector(".listingTitle")
-listingTitle.innerHTML += 
-`<h2 class="card-title">${listings.title}</h2>`
 
 } 
 
