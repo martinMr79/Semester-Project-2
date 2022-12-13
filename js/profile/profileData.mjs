@@ -36,13 +36,14 @@ export async function profileInfo() {
     const userName = document.querySelector("#userName");
     const userAvatar = document.querySelector(".userAvatar");
     const userCredits = document.querySelector(".credits");
-    
-    const { name, avatar, credits } = load("profile");
+    const userEmail = document.querySelector(".email");
+
+    const { name, avatar, credits, email } = load("profile");
 
     userName.innerText = name; 
     userAvatar.src = avatar; 
     userCredits.innerText = credits;   
-
+    userEmail.innerText = email;
  }
 
  profileInfo() 
