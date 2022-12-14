@@ -9,8 +9,9 @@
     src="https://kit.fontawesome.com/bbebfafa64.js"
     crossorigin="anonymous"
   ></script>
-  <script src="/js/profile/profileData.mjs" defer type="module"></script> 
-  
+<!-- <script src="/js/profile/profileData.mjs" defer type="module"></script> 
+<script src="/js/handlers/updateProfile.mjs" defer type="module"></script> --> 
+  <script src="/js/index.mjs" defer type="module"></script> 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,9 +26,15 @@
               <p>Your credits</p>
               <p class="credits"></p>
 
-              <div class="card-actions">
-                <button class="btn btn-primary">Edit Avatar</button>
-              </div>
+ 
+            
+              <form id="editAvatar">
+                <div class="mb-3">
+                     <input class="form-control border border-secondary mb-5" type="url" name="avatar" placeholder="New Avatar Url">
+                     <button id="changeAvatarButton" class="btn btn-primary">Edit Avatar</button> 
+                </div>  
+                                      
+              </form> 
 
             </div>
         </div>
