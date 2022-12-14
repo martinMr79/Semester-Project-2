@@ -26,7 +26,7 @@ export async function setUpdateProfileListener() {
       const form = event.target;
       const formData = new FormData(form);
       const profile = Object.fromEntries(formData.entries())
-      /*save("avatar", form.avatar.value); */
+      save("avatar", form.avatar.value); 
       
       profile.avatar = avatar; 
       profile.name = name;
