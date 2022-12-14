@@ -8,7 +8,7 @@ setLoginFormListener()
 import { setSellItemFormListener } from "./handlers/sell.mjs";
 setSellItemFormListener() 
 
-import { setSellItemFormListener } from "./handlers/sell.mjs";
+import { setUpdateProfileListener } from "./handlers/updateProfile.mjs";
 setUpdateProfileListener()
 
 export function form(){
