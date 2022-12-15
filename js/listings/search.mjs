@@ -1,9 +1,19 @@
+import { getListings } from "../listings/read.mjs";
+
 const userSearchInput = document.getElementById("userSearchInput")
 console.log(userSearchInput)
 
-userSearchInput.addEventListener("keypress", handleInput);
+userSearchInput.addEventListener("keyup", handleInput);
 
-function handleInput(event) {
-    console.log("Press")
-    console.log(event);
+export function handleInput(event) {
+    const inputValue = event.currentTarget.value.toLowerCase();
+    console.log(inputValue)
+
+    const result = getListings.listings.filter((listings) => {
+        if (listings.title.toLowerCase().startsWith(inputValue)) {
+            return true;
+        }
+
+        console.log(result)
+    })
 }
