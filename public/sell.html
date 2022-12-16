@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="/js/listings/sell.mjs" defer type="module" ></script>
     <script src="/js/index.mjs" defer type="module"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script
     src="https://kit.fontawesome.com/bbebfafa64.js"
     crossorigin="anonymous"
@@ -17,40 +18,41 @@
 
 
 <body>
-    <div class="container text-center">
-    <main class="flex-grow-1">
-        <div class="">
-            <div class="flex justify-center">
+    <main>
+        <div class="container-lg mt-4 lg:mt-16">
+          <h2 class="my-8 text-center">Sell your items</h2>
+            <div class="flex flex-row justify-center">
                 
                     
-                    <form id="sellItem">
-                        <h2>Sell your items</h2>
-                        <div class="my-3">
-                          <label for="">Title</label>
-                          <input class="form-control border border-secondary" type="text" name="title" required>
+                    <form id="sellItem" class="bg-slate-200 p-10 rounded-lg">
+                     
+                        <div class="my-3 flex flex-col">
+                          <label>Title</label>
+                          <input class="input input-bordered" type="text" name="title" required>
                         </div>
             
-                        <div class="mb-3">
-                          <label for="">Description</label>
-                          <textarea class="form-control border border-secondary" type="text" name="description" required></textarea>
+                        <div class="mb-3 flex flex-col">
+                          <label>Description</label>
+                          <textarea class="input input-bordered" type="text" name="description" required></textarea>
                         </div>
             
-                        <div class="mb-3">
-                          <label for="">Tags</label>
-                          <input class="form-control border border-secondary" type="text" name="tags">
+                        <div class="mb-3 flex flex-col">
+                          <label>Tags</label>
+                          <input class="input input-bordered" type="text" name="tags">
                         </div>
             
-                        <div class="mb-3">
-                          <label for="">Image URL</label>
-                          <input class="form-control border border-secondary" type="url" name="media">
+                        <div class="mb-3 flex flex-col">
+                          <label>Image URL</label>
+                          <input class="input input-bordered" type="url" name="media">
                         </div>
 
-                        <div class="mb-3">
-                            <label for="">Auction end</label>
-                            <input class="form-control border border-secondary" type="datetime-local" name="endsAt">
-                          </div>  
-                          
-                        <button class="btn btn-success">Sell now</button>
+                        <div class="mb-3 flex flex-col">
+                            <label>Auction end</label>
+                            <input class="input input-bordered" type="datetime-local" name="endsAt">
+                        </div>  
+                        <div class="flex flex-col">
+                        <button class="btn btn-success mt-12 ">Sell now</button>
+                      </div>
                       </form>
             </div>
         </div>
