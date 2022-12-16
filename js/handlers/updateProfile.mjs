@@ -1,6 +1,6 @@
 import { load, save } from "../storage/storage.mjs";
 import { updateProfile } from "../profile/updateProfile.mjs";
-import { readProfile, profileInfo } from "../profile/profileData.mjs";
+import { readProfile } from "../profile/profileData.mjs";
 
 export async function setUpdateProfileListener() {
   const form = document.querySelector("#editAvatar");
@@ -8,7 +8,6 @@ export async function setUpdateProfileListener() {
 
   if (form) {
     const { name } = load("profile");
-    const avatar = load("avatar");
 
     const profile = await readProfile(name);
 
