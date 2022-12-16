@@ -21,21 +21,26 @@ listingTitle.innerHTML +=
 
 const listingDetails = document.querySelector(".listingDetails")
 listingDetails.innerHTML += 
-`  <div class= "card lg:card-side bg-base-200 shadow-xl max-w-sm max-h-sm">
-<figure class="w-full max-h-42"><img class="rounded" src="${listings.media}" alt="Album"/></figure>
-<div class="card-body">
-<p>${listings.tags}</p>
-<div class="card-actions justify-start">
-<p>bids: ${listings._count.bids}</p>
-<p>Current bid:</p>
-<p>Description: ${listings.description}</p>
-<button class="btn btn-success">Bid now</button>
-</div>
-</div>
+`<div class= "flex flex-row">  
+<div class= "card lg:card-side bg-base-200 shadow-xl max-w-sm">
+  <figure class="w-full max-h-42"><img class="rounded" src="${listings.media}" alt="Album"/></figure>
+    <div class="card-body">
+      <p>${listings.tags}</p>
+      <p>Description: ${listings.description}</p>
+    </div>
 </div>
 
-<div>dfdfdf</div>
+
+  <div class="ml-12 card-body border bg-slate-200 rounded-lg">
+  <p>bids: ${listings._count.bids}</p>
+  <p>Current bid:</p>
+  <input type="number" value="" class="input input-bordered text-black w-full bg-white">
+  <button class="btn btn-success">Bid now</button>
+  </div>
+
+</div>
 `
+
 
 
 
