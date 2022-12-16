@@ -6,7 +6,7 @@ const action = "/profiles";
 const method = "PUT";
 
 export async function updateProfile(profileData) {
-
+  
   /*const {name} = load ("profile");*/
 
   if (!profileData.name) {
