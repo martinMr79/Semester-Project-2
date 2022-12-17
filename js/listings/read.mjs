@@ -11,6 +11,7 @@ export async function getListings() {
   console.log(listings);
 
   for (let i = 0; i < listings.length; i++) {
+    
     if (listings[i].media.length === 0) {
       listings[i].media =
         'https://www.freeiconspng.com/uploads/no-image-icon-4.png" width="100" alt="Simple No Png';

@@ -7,6 +7,8 @@
     <!--<title></title> -->
     <script src="/js/listings/details.mjs" type="module" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/handlers/bid.mjs" type="module" defer></script>
+    
     <script
     src="https://kit.fontawesome.com/bbebfafa64.js"
     crossorigin="anonymous"
@@ -21,11 +23,13 @@
 
 <body>
     <main class="flex justify-center ">
-
-        
         <div class="listingDetails mt-16 ">
             <h1 class ="listingTitle mb-2"></h1>
         </div>
+        <form id="bidForm">
+            <input id="floatingAmount" type="number" value="" class="input input-bordered ">
+            <button id="bidButton" class="btn btn-success" type="submit">Bid now</button>
+        </form>
         
     </main>
 </body>
