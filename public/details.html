@@ -22,15 +22,19 @@
 
 
 <body>
-    <main class="flex justify-center ">
+    <main class="flex justify-center" style="display: block; text-align: center;">
         <div class="listingDetails mt-16 ">
             <h1 class ="listingTitle mb-2"></h1>
         </div>
-        <form id="bidForm">
-            <input id="floatingAmount" type="number" value="" class="input input-bordered ">
-            <button id="bidButton" class="btn btn-success" type="submit">Bid now</button>
-        </form>
-        
+        <div>
+            <form id="bidForm" style="display: block;">
+                <div>
+                    <input id="floatingAmount" type="number" value="" class="input input-bordered ">
+                </div>
+                
+                <button id="bidButton" class="btn btn-success" type="submit">Bid now</button>
+            </form>
+        </div>
     </main>
 </body>
 </html>

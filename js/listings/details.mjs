@@ -24,11 +24,13 @@ export async function getListing() {
 
   const listingDetails = document.querySelector(".listingDetails");
   listingDetails.innerHTML += `<div class= "flex flex-row">  
-<div class= "card lg:card-side bg-base-200 shadow-xl max-w-sm">
-  <figure class="w-full max-h-42"><img class="rounded" src="${
-    listings.media
-  }" alt="Album"/></figure>
-    <div class="card-body">
+<div class= "card lg:card-side bg-base-200 shadow-xl max-w-sm">`;
+
+  for (let i = 0; i < listings.media.length; i++) {
+    listingDetails.innerHTML += `<figure class="items-center" style="display:inline-flex;"><img class="rounded" src="${listings.media[i]}" alt="Album" width="200" style="display:block"/></figure>`;
+  }
+
+  listingDetails.innerHTML += `<div class="card-body">
       <p>${listings.tags}</p>
       <p>Description: ${listings.description}</p>
     </div>
