@@ -1,5 +1,5 @@
 import { API_AUCTION_URL } from "../api/apiURL.mjs";
-import { authFetch } from "../api/auth/authFetch.mjs"
+
 
 
 export async function getListing() {
@@ -7,10 +7,13 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 let id = urlParams.get("id");
 const action = "/listings";
+const author = "?_seller=true&_bids=true"
 
-const getListingURL = `${API_AUCTION_URL}${action}/${id}`;    
+const getListingURL = `${API_AUCTION_URL}${action}/${id}${author}`;    
 const response = await fetch(getListingURL)
 const listings = await response.json();
+
+
 
 console.log(listings);
 
@@ -32,35 +35,45 @@ listingDetails.innerHTML +=
 
 
   <div class="ml-12 card-body border bg-slate-200 rounded-lg">
-  <p>bids: ${listings._count.bids}</p>
-  <p>Current bid:</p>
-  <input type="number" value="" class="input input-bordered text-black w-full bg-white">
+  <p>Number of bids: ${listings._count.bids}</p>
+  <p>Auction ends at: ${listings.endsAt}</p>
+  <h2>Current bid: ${listings.bids.reverse()[0].amount} </h2>
+  <input type="number" value="" class="input input-bordered ">
   <button class="btn btn-success">Bid now</button>
   </div>
 
 </div>
 `
 
+/*
+export const buildBidInfo = (data) => {
 
+let body;
+let amount = 0;
 
+if (data.bids.length === 0) {
+  body = errorMessage("No bids yet");
+} else {
+  const bidders = sortAmountAsc(data.bids);
+  const dateFix = timeAgo(bidders[0].created);
 
+  amount = bidders[0].amount;
 
+  body = `
+    <div class="flex flex-col gap-2 w-full">
+      <h3 class="text-xl">Current bid</h3>
+      <h4 class="text-lg font-semibold">${bidders[0].bidderName}</h3>
+      <p>Amount: ${bidders[0].amount}</p>
+      <p>${dateFix}</p>
+    </div>`;
 
+}
+*/
 
 } 
-
+  
+/*buildBidInfo()*/
   getListing()
   
-
-
-
-  async function createHTML() { 
-
-
-
-  }
-
-
-  createHTML()
 
 
