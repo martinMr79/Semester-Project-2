@@ -37,7 +37,9 @@ export async function getListing() {
 
   <div class="ml-12 card-body border bg-slate-200 rounded-lg">
   <p>Number of bids: ${listings._count.bids}</p>
-  <p>Auction ends at: ${listings.endsAt}</p>
+  <p>Auction ends at: ${
+    listings.endsAt.slice(0, -14) + " " + listings.endsAt.slice(11, -8)
+  }</p>
   <h2>Current bid: ${listings.bids.reverse()[0].amount} </h2>
   
   </div>

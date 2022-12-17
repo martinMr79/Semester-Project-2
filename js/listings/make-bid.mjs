@@ -7,7 +7,6 @@ import { authFetch } from "../api/auth/authFetch.mjs";
  * @returns
  */
 export async function makeBid(bidData) {
-  debugger;
   const listId = localStorage.getItem("listId");
 
   const queryString = window.location.search;
