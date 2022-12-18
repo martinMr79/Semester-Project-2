@@ -28,7 +28,6 @@ export async function readProfile(name) {
  */
 
 export async function profileInfo() {
-  
   const userName = document.querySelector("#userName");
   const userAvatar = document.querySelector(".userAvatar");
   const userCredits = document.querySelector(".credits");

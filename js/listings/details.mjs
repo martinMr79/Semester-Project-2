@@ -1,30 +1,36 @@
 import { API_AUCTION_URL } from "../api/apiURL.mjs";
-import { authFetch } from "../api/auth/authFetch.mjs"
-
 
 export async function getListing() {
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-let id = urlParams.get("id");
-const action = "/listings";
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  let id = urlParams.get("id");
+  const action = "/listings";
+  const author = "?_seller=true&_bids=true";
 
-const getListingURL = `${API_AUCTION_URL}${action}/${id}`;    
-const response = await fetch(getListingURL)
-const listings = await response.json();
+  const getListingURL = `${API_AUCTION_URL}${action}/${id}${author}`;
+  const response = await fetch(getListingURL);
+  const listings = await response.json();
 
-console.log(listings);
+  console.log(listings);
 
-const listingTitle = document.querySelector(".listingTitle")
-listingTitle.innerHTML += 
-`<title>${listings.title}</title>
-<h1 class="card-title text-center mb-8">${listings.title}</h1>`
+  const listingTitle = document.querySelector(".listingTitle");
+  listingTitle.innerHTML += `<title>${listings.title}</title>
+<h1 class="card-title text-center mb-8">${listings.title}</h1>`;
 
-const listingDetails = document.querySelector(".listingDetails")
-listingDetails.innerHTML += 
-`<div class= "flex flex-row">  
-<div class= "card lg:card-side bg-base-200 shadow-xl max-w-sm">
-  <figure class="w-full max-h-42"><img class="rounded" src="${listings.media}" alt="Album"/></figure>
-    <div class="card-body">
+  if (listings.media.length === 0) {
+    listings.media =
+      'https://www.freeiconspng.com/uploads/no-image-icon-4.png" width="350" alt="Simple No Png';
+  }
+
+  const listingDetails = document.querySelector(".listingDetails");
+  listingDetails.innerHTML += `<div class= "flex flex-row">  
+<div class= "card lg:card-side bg-base-200 shadow-xl max-w-sm">`;
+
+  for (let i = 0; i < listings.media.length; i++) {
+    listingDetails.innerHTML += `<figure class="items-center" style="display:inline-flex;"><img class="rounded" src="${listings.media[i]}" alt="Album" width="200" style="display:block"/></figure>`;
+  }
+
+  listingDetails.innerHTML += `<div class="card-body">
       <p>${listings.tags}</p>
       <p>Description: ${listings.description}</p>
     </div>
@@ -32,35 +38,16 @@ listingDetails.innerHTML +=
 
 
   <div class="ml-12 card-body border bg-slate-200 rounded-lg">
-  <p>bids: ${listings._count.bids}</p>
-  <p>Current bid:</p>
-  <input type="number" value="" class="input input-bordered text-black w-full bg-white">
-  <button class="btn btn-success">Bid now</button>
-  </div>
-
-</div>
-`
-
-
-
-
-
-
-
-} 
-
-  getListing()
+  <p>Number of bids: ${listings._count.bids}</p>
+  <p>Auction ends at: ${
+    listings.endsAt.slice(0, -14) + " " + listings.endsAt.slice(11, -8)
+  }</p>
+  <h2>Current bid: ${listings.bids.reverse()[0].amount} </h2>
   
+  </div>
+  
+</div>
+`;
+}
 
-
-
-  async function createHTML() { 
-
-
-
-  }
-
-
-  createHTML()
-
-
+getListing();

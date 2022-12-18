@@ -1,6 +1,6 @@
 {
-    "liveServer.settings.port": 5501,
-    "tailwindCSS.emmetCompletions": true,
-    "tailwindCSS.suggestions": true,
-    "editor.formatOnSave": true
+  "liveServer.settings.port": 5501,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.suggestions": true,
+  "editor.formatOnSave": true
 }
