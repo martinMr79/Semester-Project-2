@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bargain Basement</title>
+    <link rel="shortcut icon" href="/logo/bargain-basement-logo blue.png" type="image/x-icon">
+  <script src="/js/handlers/register.mjs" defer type="module" ></script>
+  <script src="/js/index.mjs" defer type="module"></script>
+  <script
+  src="https://kit.fontawesome.com/bbebfafa64.js"
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-vh-100">
+    <div class="container text-center">    
+    <!--https://icon-library.com/icon/user-icon-jpg-28.html-->
+
+ 
+<main class="flex-grow-1 ">
+    <div class="">
+        <div class="flex justify-center">
+            <div class="">
+             <h2 class="my-8">Register a new user</h2>
+                <form id="registerForm" class="bg-slate-200 p-10 rounded-lg">
+                    <div class="mb-3 flex flex-col">
+                        <label class="fw-semibold">Name</label>
+                        <input class="input input-bordered" type="text" name="name" required pattern="^[\w]+$" title="User name must only contain lower case and upper case letters, and underscore. (Example: John_doe49)">
+                    </div>
+
+                    <div class="mb-3 flex flex-col">
+                        <label for="" class="fw-semibold">Email</label>
+                        <input class="input input-bordered" type="email" name="email" required pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Only @(stud.)noroff.no domains are allowed to register.">
+                    </div>
+
+                    <div class="mb-3 flex flex-col">
+                        <label for="" class="fw-semibold">Avatar</label>
+                        <input class="input input-bordered" type="url" name="avatar" value="https://picsum.photos/200/300">
+                    </div>    
+
+                    <div class="mb-3 flex flex-col">
+                        <label for="" class="fw-semibold">Password</label>
+                        <input class="input input-bordered" type="password" name="password" required minlength="8">
+                    </div>
+
+                    
+                    <div class="mb-3 flex flex-col">
+                        <button class="btn btn-success mt-10">Register</button>
+                    </div>    
+
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
