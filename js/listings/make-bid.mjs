@@ -2,9 +2,7 @@ import { API_AUCTION_URL } from "../api/apiURL.mjs";
 import { authFetch } from "../api/auth/authFetch.mjs";
 
 /**
- * Makes a bid on a listing
- * @param {number} bidData represents the input information
- * @returns
+ * bid on a listing
  */
 export async function makeBid(bidData) {
   const listId = localStorage.getItem("listId");
@@ -33,7 +31,7 @@ export async function makeBid(bidData) {
     return await response.json();
   } else {
     alert(
-      "Something went wrong, please make sure your bid is equal to or lower then your credits"
+      "Oops! Something went wrong, do you have enough credits?"
     );
   }
 }
