@@ -15,7 +15,7 @@ export async function getListing() {
 
   const listingTitle = document.querySelector(".listingTitle");
   listingTitle.innerHTML += `<title>${listings.title}</title>
-<h1 class="card-title text-center mb-8">${listings.title}</h1>`;
+<h1 class="text-3xl text-center mb-8">${listings.title}</h1>`;
 
   if (listings.media.length === 0) {
     listings.media =
@@ -27,7 +27,7 @@ export async function getListing() {
 <div class= "card lg:card-side bg-base-200 shadow-xl max-w-sm">`;
 
   for (let i = 0; i < listings.media.length; i++) {
-    listingDetails.innerHTML += `<figure class="items-center" style="display:inline-flex;"><img class="rounded" src="${listings.media[i]}" alt="Album" width="200" style="display:block"/></figure>`;
+    listingDetails.innerHTML += `<figure class="items-center gap-4" style="display:inline-flex;"><img class="rounded" src="${listings.media[i]}" alt="Album" width="200" style="display:block"/></figure>`;
   }
 
   listingDetails.innerHTML += `<div class="card-body">

@@ -31,7 +31,7 @@ export async function makeBid(bidData) {
     return await response.json();
   } else {
     alert(
-      "Oops! Something went wrong, do you have enough credits?"
+      "Oops! Something went wrong, make sure you are logged on, and have enough credits to make a bid"
     );
   }
 }
