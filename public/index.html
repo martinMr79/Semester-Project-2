@@ -25,33 +25,34 @@
 
  <div class="navbar bg-base-100 container max-w-5xl mx-auto">
   <div class="flex-1">
-    <div class=" w-20 md:w-28 lg:w-48 rounded-full">
+    <div class=" w-0 xs:w-20 md:w-28 lg:w-48 rounded-full">
       <a href="index.html"><img src="/logo/bargain-basement-logo-blue.png" alt=""></a>
      </div>
   </div>
-  <div class="flex-none">
+  <div class="flex-none text-sm ">
     <ul class="menu menu-horizontal p-0">
 
- <!--  <li tabindex="0" class="mr-8">
+      <li tabindex="0" class="m-0">
         <a>
-          Categories
+          Menu
           <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
         </a>
         <ul class="p-2 bg-base-100">
-          <li><a>Submenu 1</a></li>
-          <li><a>Submenu 2</a></li>
+          <li><a href="/public/sell.html">Sell</a></li>
+          <li><a href="#login-modal">Login</a></li> 
+          <li class="logout"><a href="">Logout</a></li>
         </ul>
-      </li>  -->   
+      </li>
 
-      <div class="form-control">
-        <input id="userSearchInput" type="text" placeholder="Search" class="input input-bordered mr-10 pr-6" />
+      <div class="">
+        <input id="userSearchInput" type="text" placeholder="Search" class="input flex-1 input-bordered mr-2"  />
       </div>
      
-      <li><a href="/public/sell.html">Sell</a></li>
+     
 
       <!--navbar login modal-->
 
-      <li><a href="#login-modal">Login</a></li>          
+               
 
 
 <div class="modal" id="login-modal">
@@ -99,13 +100,14 @@
 
   </div>
 </div>
-      <li class="logout"><a href="">Logout</li>
+<button class="btn btn-ghost btn-circle"> 
+  <a href="./profile.html">
+     <i class="fa-solid fa-user fa-lg"></i
+   ></a>
+ </button>
+      
     </ul>
-    <button class="btn btn-ghost btn-circle"> 
-     <a href="./profile.html">
-        <i class="fa-solid fa-user fa-lg"></i
-      ></a>
-    </button>
+
 
   </div>
 </div>

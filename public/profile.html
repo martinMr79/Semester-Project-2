@@ -10,13 +10,104 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://cdn.tailwindcss.com"></script>
-<!-- <script src="/js/profile/profileData.mjs" defer type="module"></script> 
-<script src="/js/handlers/updateProfile.mjs" defer type="module"></script> --> 
   <script src="/js/index.mjs" defer type="module"></script> 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="flex flex-col lg:flex-row justify-between">
+
+  <!-- Navbar -->
+
+ <div class="navbar bg-base-100 container max-w-5xl mx-auto">
+  <div class="flex-1">
+    <div class=" w-0 xs:w-20 md:w-28 lg:w-48 rounded-full">
+      <a href="index.html"><img src="/logo/bargain-basement-logo-blue.png" alt=""></a>
+     </div>
+  </div>
+  <div class="flex-none text-sm ">
+    <ul class="menu menu-horizontal p-0">
+
+      <li tabindex="0" class="m-0">
+        <a>
+          Menu
+          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+        </a>
+        <ul class="p-2 bg-base-100">
+          <li><a href="/public/sell.html">Sell</a></li>
+          <li><a href="#login-modal">Login</a></li> 
+          <li class="logout"><a href="">Logout</a></li>
+        </ul>
+      </li>
+
+      <div class="">
+        <input id="userSearchInput" type="text" placeholder="Search" class="input flex-1 input-bordered mr-2"  />
+      </div>
+     
+     
+
+      <!--navbar login modal-->
+
+               
+
+
+<div class="modal" id="login-modal">
+  <div class="modal-box ">
+
+    <div class="modal-action">
+      <a href="#">Close X</a>
+     </div>
+
+    <h4 class="font-bold text-lg">Login to your account</h4>
+    
+
+    <form id="loginForm">
+
+      <div class=" my-3 ">
+          <label for="" class="font-semibold">Email</label>
+          <input class="form-control mb-4 input input-bordered" type="email" name="email" required  pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Only @(stud.)noroff.no domains are allowed to login.">
+      </div>
+
+      <div class=" mb-3">
+          <label for="" class="font-semibold">Password</label>
+          <input class="form-control input input-bordered" type="password" name="password" required minlength="8">
+      </div>
+      
+      <div
+      class="flex items-center form-check"
+    >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="flexCheckChecked"
+        checked
+      />
+      <p class="mx-3">remember me</p>
+      
+    </div>
+
+
+
+      <button class="btn btn-success my-3 col-6">Login</button>
+      <p class="my-3">
+          Don`t have an account yet?</p><a href="./register.html" class="btn btn-secondary mb-5">Sign up</a>
+  </form>
+
+  </div>
+</div>
+<button class="btn btn-ghost btn-circle"> 
+  <a href="./profile.html">
+     <i class="fa-solid fa-user fa-lg"></i
+   ></a>
+ </button>
+      
+    </ul>
+
+
+  </div>
+</div>
+
+
+    <div class="flex flex-row justify-center mt-4">
         <div class="card w-96 bg-base-100 shadow-xl">                     
             <div class="card-body items-center text-center">
                 <div class="  ">
