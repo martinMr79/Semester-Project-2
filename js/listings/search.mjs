@@ -1,7 +1,7 @@
 //import { getListings } from "../listings/read.mjs";
 import { API_AUCTION_URL } from "../api/apiURL.mjs";
 
-const action = "/listings?_bids=true&limit=20";
+const action = "/listings?_bids=true&limit=30";
 const listingsCard = document.querySelector(".recentListings");
 
 userSearchInput.addEventListener("keyup", handleInput);
@@ -20,8 +20,6 @@ export async function handleInput(event) {
       return true;
     }
   });
-
-  console.log("Result filtrado");
   console.log(result);
   for (let i = 0; i < result.length; i++) {
     if (result[i].media.length === 0) {
