@@ -91,9 +91,12 @@ Ensure that the readme.md file describes your project thoroughly, including how 
 
 # Bargain Basement Auction
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
 
-A simple overview of the use/purpose of the project.
+![FrontPageImg](https://github.com/martinMr79/Semester-Project-2/assets/80599295/29c5da97-3282-4afd-9b04-60c1b835980d)
+
+A website where users can add items to be bid on and bid on items other users have put up for auction.
+
+When a new user joins the website, they are given 1000 credits to use on the site. They can get credits by selling items and use credit by buying items. Non-registered users can search through the listings, but only registered users can make bids on listings.
 
 ## Description
 
