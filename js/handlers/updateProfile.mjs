@@ -20,13 +20,11 @@ export async function setUpdateProfileListener() {
       const formData = new FormData(form);
       const profile = Object.fromEntries(formData.entries());
       save("avatar", form.avatar.value);
-      //save("profile", profile.avatar);
 
       form.avatar.value = profile.avatar;
       profile.name = name;
       userAvatar.src = profile.avatar;
 
-      // Send it to the API
       updateProfile(profile);
     });
   }

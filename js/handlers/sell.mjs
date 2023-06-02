@@ -27,9 +27,6 @@ import { sellItem } from "../listings/sell.mjs";
       }
       
       
-
-
-      // Send it to the API
       sellItem(post).then(console.log(post))
     })
   }
