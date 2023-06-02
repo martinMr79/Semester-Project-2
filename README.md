@@ -62,58 +62,62 @@ The Product Owner has requested links to the following:
 
 This list covers libraries and services that have been vetted by the company and approved for use.
 
-### CSS frameworks
-
-- Bootstrap (>5)
-- Tailwind (>3)
-- MUI (>5)
-
-### Hosting services
-
-- GitHub Pages
-- Netlify
-### Design applications
-- Adobe XD
-- Figma
-- Sketch
-
-### Planning applications
-- Trello
-- GitHub Projects
-
-### Delivery
-Include the required links in the Moodle delivery window using this template format. All final changes must be merged into the default branch main or master. Other branches will not be checked.
-
-Ensure that the readme.md file describes your project thoroughly, including how to setup and run the project locally and any special instructions for testers.
 
 <hr/>
 <hr/>
 
 # Bargain Basement Auction
 
-
 ![FrontPageImg](https://github.com/martinMr79/Semester-Project-2/assets/80599295/29c5da97-3282-4afd-9b04-60c1b835980d)
 
-A website where users can add items to be bid on and bid on items other users have put up for auction.
+Bargain Basement Auction is a website where users can add items to be bid on and bid on items listed by other users.
 
-When a new user joins the website, they are given 1000 credits to use on the site. They can get credits by selling items and use credit by buying items. Non-registered users can search through the listings, but only registered users can make bids on listings.
+When a new user joins the website, they are given 1000 credits to use for bidding on items. Users can earn additional credits by selling items, and they can utilize their credits to purchase items. Non-registered users can search through the listings, but only registered users can place bids on items.
 
-## Description
+## Functions and Features
 
-Add a more detailed description of what your project entails and set out to do.
-
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+- Registration: Users with a `stud.noroff.no` email can create an account.
+- Login: Registered users can log in to their accounts.
+- Logout: Logged-in users can log out of their accounts.
+- Avatar Update: Registered users can update their avatar.
+- Create Listing: Registered users can create a new listing by providing a title, deadline date, media, and description.
+- Place Bids: Users can place bids on listings created by other users.
+- View Highest Bid: Registered users can see the highest bid placed on a listing.
+- View Credit Balance: Users can view their total credit balance.
+- Earn Credit: Registered users can earn credits by receiving successful bids on their own listings.
+- Use Credit: Registered users can utilize their credits to place bids on other users' listings.
+- Search Listings: Both registered and unregistered users can search for listings.
 
 ## Built With
 
-You can list a the tech stack that you've used over here
+- [Tailwind CSS (>3)](https://tailwindcss.com)
+- [Vanilla JavaScript](https://www.javascript.com)
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+### API
+
+The API used for this project can be found under Auction EndPoints in the [Noroff API documentation](https://docs.noroff.dev/auctionhouse-endpoints/authentication).
+
+### Hosting Services
+
+- [Netlify](https://www.netlify.com)
+
+### Design Applications
+
+- [Adobe XD](https://www.adobe.com/products/xd.html)
+
+### Husky
+
+[Husky](https://typicode.github.io/husky) For streamlined Git hooks.
+
+### Planning applications
+
+- [Trello](https://trello.com)
+
+## Demo 
+
+Netlify deployment link: [Bargain Basement Auction](https://snazzy-cupcake-064c05.netlify.app)
+
+
 
 ## Getting Started
 
