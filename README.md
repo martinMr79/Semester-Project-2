@@ -1,13 +1,3 @@
-
-- A Gantt chart for project timing
-- A design prototype
-- A style guide
-- A kanban project board
-- A repository link
-- A hosted application demo link
-
-<hr/>
-
 # Bargain Basement Auction
 
 ![FrontPageImg](https://github.com/martinMr79/Semester-Project-2/assets/80599295/29c5da97-3282-4afd-9b04-60c1b835980d)
@@ -39,11 +29,11 @@ When a new user joins the website, they are given 1000 credits to use for biddin
 
 The API used for this project can be found under Auction EndPoints in the [Noroff API documentation](https://docs.noroff.dev/auctionhouse-endpoints/authentication). API functionality is managed by an existing application. This project only covers the front-end application for the API.
 
-### Hosting Services
+### Hosting Service
 
 - [Netlify](https://www.netlify.com)
 
-### Design Applications
+### Design Application
 
 - [Adobe XD](https://www.adobe.com/products/xd.html)
 
@@ -66,50 +56,33 @@ Netlify deployment link: [Bargain Basement Auction](https://snazzy-cupcake-064c0
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+To get started with the project, follow these steps:
 
-1. Clone the repo:
-
-```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
-```
+1. Clone the repository:
+2. npm install.
 
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
+To run the app, run the following commands: npm run start
 
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
 
 ## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+Contributions to this project are welcome. If you would like to contribute, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive commit messages.
+4. Push your changes to your forked repository.
+5. Open a pull request, and describe the changes you have made.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+  [My Linkedin page](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjk04jXp4r4AhUZRfEDHQMbCSYQFnoECAcQAQ&url=https%3A%2F%2Fno.linkedin.com%2Fin%2Fmartin-mroz-28008121a&usg=AOvVaw1SSNET_dDG4MRj1uQ6PD__)
 
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
+  [Email](https://mamr@hotmail.no)
 
 ## License
 
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
-
-
-
+This project is licensed under the [MIT](https://www.mit.edu/~amini/LICENSE.md) License. You can find the license details 
 
