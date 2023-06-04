@@ -14,7 +14,6 @@ export function setRegisterFormListener() {
       const formData = new FormData(form);
       const profile = Object.fromEntries(formData.entries())
 
-      //send to api 
       register(profile)
       
     })

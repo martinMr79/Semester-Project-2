@@ -1,14 +1,14 @@
 import { API_AUCTION_URL } from "../api/apiURL.mjs";
 
-const action = "/listings?_bids=true&limit=20";
+const limit = 20;     
+let currentOffset = 0; 
 const listingsCard = document.querySelector(".recentListings");
 
 export async function getListings() {
+  const action = `/listings?_bids=true&limit=${limit}&offset=${currentOffset}`;
   const updatePostURL = `${API_AUCTION_URL}${action}`;
   const response = await fetch(updatePostURL);
   const listings = await response.json();
-
-  console.log(listings);
 
   for (let i = 0; i < listings.length; i++) {
     if (listings[i].media.length === 0) {
@@ -22,12 +22,17 @@ export async function getListings() {
   <div class="card-body">
   <h2 class="card-title">${listings[i].title}</h2>
   <p>${listings[i].tags}</p>
-  
-
   <p>Description: ${listings[i].description}</p>
   </div>
 </div>
   </a>`;
   }
 }
+
+document.getElementById('loadMore').addEventListener('click', function() {
+  currentOffset += limit;
+  getListings();
+});
+
 getListings();
+
