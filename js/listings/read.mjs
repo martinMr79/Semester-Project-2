@@ -1,7 +1,7 @@
 import { API_AUCTION_URL } from "../api/apiURL.mjs";
 
-const limit = 20;     // Items per page
-let currentOffset = 0; // Initial offset
+const limit = 20;     
+let currentOffset = 0; 
 const listingsCard = document.querySelector(".recentListings");
 
 export async function getListings() {
